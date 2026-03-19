@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Marked</title>
+    <link rel="stylesheet" href="../static/attendance.css">
+</head>
+<body>
+
+<div class="attendance-container">
+    <div class="attendance-box">
+        <h1>🎉 Congratulations!</h1>
+        <p>Your attendance is marked for <strong>{{ name }}</strong></p>
+        <button onclick="window.location.href='/dashboard'">Back to Dashboard</button>
+        <button onclick="window.location.href='/attendance_records'">View Attendance Records</button>
+    </div>
+</div>
+
+<!-- Auto redirect to attendance records after 5 seconds -->
+<script>
+    setTimeout(function() {
+        window.location.href = '/attendance_records';
+    }, 5000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* Full page background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* NEW background image URL */
+    background: url('https://wallpaperaccess.com/full/19051.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container to center content */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Box with content */
+.dashboard-box {
+    background: rgba(255, 255, 255, 0.185);  /* semi-transparent */
+    backdrop-filter: blur(10px);           /* blur effect */
+    -webkit-backdrop-filter: blur(10px);   /* Safari support */
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px #000;
+}
+
+/* Heading in dashboard box */
+.dashboard-box h1 {
+    margin-bottom: 20px;
+    color: white;  /* <-- make it white */
+    text-align: center; /* optional, center the text */
+}
+
+.dashboard-box p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.dashboard-box button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dashboard-box button:hover {
+    background-color: #45a049;
+}
